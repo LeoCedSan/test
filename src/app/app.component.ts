@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { products } from './interface/products';
 
+
+// Importar el tipo 'products'
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -9,5 +12,5 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'test';
+  fruta: products = ['manzana', 'pera', 'naranja'];
 }
